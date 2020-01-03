@@ -6,7 +6,8 @@ package ak.springframework.spring5webapp.model;
  * a pojo class */
 
 import javax.persistence.*;
-import java.util.HashMap;
+
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -19,7 +20,7 @@ public class Author {
     private String lastName;
 
     @ManyToMany
-    private Set<Book> books = (Set<Book>) new HashMap<>();
+    private Set<Book> books = new HashSet<>();
 
     public Author() {
 
