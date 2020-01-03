@@ -5,13 +5,11 @@ package ak.springframework.spring5webapp.model;
  * Date: 02/01/2020
  * a pojo class */
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.HashMap;
 import java.util.Set;
 
+@Entity
 public class Author {
 
     @Id
